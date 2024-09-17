@@ -3,9 +3,9 @@ name: Node.js CI
 # Trigger the workflow on push or pull request to the main branch
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 # Define the jobs in the workflow
 jobs:
