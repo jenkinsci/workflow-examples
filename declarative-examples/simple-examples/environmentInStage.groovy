@@ -1,5 +1,5 @@
 pipeline {
-  agent linux
+  agent { label 'linux' }
 
   environment {
     // FOO will be available in entire pipeline
