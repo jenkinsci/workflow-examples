@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent linux
 
   environment {
     // FOO will be available in entire pipeline
