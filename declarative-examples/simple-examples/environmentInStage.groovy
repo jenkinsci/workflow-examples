@@ -15,7 +15,7 @@ pipeline {
 		    doGenerateSubmoduleConfigurations: false,
 		    extensions: [],
 		    submoduleCfg: [],
-		    userRemoteConfigs: [[credentialsId: 'ajinkyamhasrup',
+		    userRemoteConfigs: [[credentialsId: 'Git',
 		    url: 'git@github.com:ajinkyamhasrup/pipeline-examples.git']]])
 	    }
 }
