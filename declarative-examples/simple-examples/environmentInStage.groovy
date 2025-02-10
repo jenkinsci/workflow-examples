@@ -7,6 +7,19 @@ pipeline {
   }
 
   stages {
+    
+    stage('CheckOutGit') {
+	    steps{
+		    checkout([$class: 'GitSCM',
+		    branches: [[name: 'master']],
+		    doGenerateSubmoduleConfigurations: false,
+		    extensions: [],
+		    submoduleCfg: [],
+		    userRemoteConfigs: [[credentialsId: 'ajinkyamhasrup',
+		    url: 'git@github.com:ajinkyamhasrup/pipeline-examples.git']]])
+	    }
+}
+    
     stage("local") {
       environment {
         // BAR will only be available in this stage
