@@ -11,7 +11,7 @@ pipeline {
     stage('CheckOutGit') {
 	    steps{
 		    checkout([$class: 'GitSCM',
-		    branches: [[name: 'master']],
+		    branches: [[name: 'feature/Feb_10_2025']],
 		    doGenerateSubmoduleConfigurations: false,
 		    extensions: [],
 		    submoduleCfg: [],
@@ -31,7 +31,7 @@ pipeline {
     }
     stage("global") {
       steps {
-        sh 'echo "FOO is $FOO and BAR is $BAR"'
+        sh 'echo "FOO is $FOO and BAR is $BAR laxman"'
       }
     }
 
