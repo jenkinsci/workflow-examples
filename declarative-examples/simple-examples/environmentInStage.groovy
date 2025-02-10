@@ -34,7 +34,6 @@ pipeline {
         sh 'echo "FOO is $FOO and BAR is $BAR"'
       }
     }
-      }
 
   }
 }
