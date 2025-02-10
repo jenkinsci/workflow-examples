@@ -34,5 +34,12 @@ pipeline {
         sh 'echo "FOO is $FOO and BAR is $BAR"'
       }
     }
+
+      stage("timepass") {
+          steps {
+              sh 'echo "FOO is $FOO a*gdgkbdgbs $BAR"'
+          }
+      }
+
   }
 }
